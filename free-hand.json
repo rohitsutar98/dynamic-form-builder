@@ -1,0 +1,432 @@
+{
+    "rows": [
+        {
+            "id": "F_00Row_layout",
+            "label": "Row",
+            "columns": "1",
+            "cols": [
+                {
+                    "id": "F_00Col_layout",
+                    "label": "Col",
+                    "columns": "6",
+                    "formFields": [
+                        {
+                            "id": "F_00FirstName_formFields",
+                            "label": "First Name",
+                            "type": "String",
+                            "defaultValue": "",
+                            "validation": {
+                                "constraints": [
+                                    {
+                                        "name": "Control Type",
+                                        "config": "Text Field"
+                                    },
+                                    {
+                                        "name": "Required",
+                                        "config": true
+                                    },
+                                    {
+                                        "name": "Readonly",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "Hidden",
+                                        "config": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "F_01Col_layout",
+                    "label": "Col",
+                    "columns": "6",
+                    "formFields": [
+                        {
+                            "id": "F_00LastName_formFields",
+                            "label": "Last Name",
+                            "type": "String",
+                            "defaultValue": "",
+                            "validation": {
+                                "constraints": [
+                                    {
+                                        "name": "Control Type",
+                                        "config": "Text Field"
+                                    },
+                                    {
+                                        "name": "Required",
+                                        "config": true
+                                    },
+                                    {
+                                        "name": "Readonly",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "Hidden",
+                                        "config": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "F_02Col_layout",
+                    "label": "Col",
+                    "columns": "12",
+                    "sections": [
+                        {
+                            "id": "F_00Section_section",
+                            "label": "Section",
+                            "rows": [
+                                {
+                                    "id": "F_00Row_layout",
+                                    "label": "Row",
+                                    "columns": "1",
+                                    "cols": [
+                                        {
+                                            "id": "F_00Col_layout",
+                                            "label": "Col",
+                                            "columns": "4",
+                                            "formFields": [
+                                                {
+                                                    "id": "F_00Que1_formFields",
+                                                    "label": "Que 1",
+                                                    "type": "String",
+                                                    "defaultValue": "",
+                                                    "validation": {
+                                                        "constraints": [
+                                                            {
+                                                                "name": "Control Type",
+                                                                "config": "Radio"
+                                                            },
+                                                            {
+                                                                "name": "Required",
+                                                                "config": false
+                                                            },
+                                                            {
+                                                                "name": "Readonly",
+                                                                "config": false
+                                                            },
+                                                            {
+                                                                "name": "Hidden",
+                                                                "config": false
+                                                            }
+                                                        ]
+                                                    },
+                                                    "master": "custom",
+                                                    "options": [
+                                                        {
+                                                            "label": "Yes",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "label": "No",
+                                                            "value": "2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "F_01Col_layout",
+                                            "label": "Col",
+                                            "columns": "4",
+                                            "formFields": [
+                                                {
+                                                    "id": "F_00Que2_formFields",
+                                                    "label": "Que 2",
+                                                    "type": "String",
+                                                    "defaultValue": "",
+                                                    "validation": {
+                                                        "constraints": [
+                                                            {
+                                                                "name": "Control Type",
+                                                                "config": "Radio"
+                                                            },
+                                                            {
+                                                                "name": "Required",
+                                                                "config": false
+                                                            },
+                                                            {
+                                                                "name": "Readonly",
+                                                                "config": false
+                                                            },
+                                                            {
+                                                                "name": "Hidden",
+                                                                "config": false
+                                                            }
+                                                        ]
+                                                    },
+                                                    "master": "custom",
+                                                    "options": [
+                                                        {
+                                                            "label": "Yes",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "label": "No",
+                                                            "value": "2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "F_02Col_layout",
+                                            "label": "Col",
+                                            "columns": "4",
+                                            "formFields": [
+                                                {
+                                                    "id": "F_00Que_formFields",
+                                                    "label": "Que",
+                                                    "type": "String",
+                                                    "defaultValue": "",
+                                                    "validation": {
+                                                        "constraints": [
+                                                            {
+                                                                "name": "Control Type",
+                                                                "config": "Radio"
+                                                            },
+                                                            {
+                                                                "name": "Required",
+                                                                "config": false
+                                                            },
+                                                            {
+                                                                "name": "Readonly",
+                                                                "config": false
+                                                            },
+                                                            {
+                                                                "name": "Hidden",
+                                                                "config": false
+                                                            }
+                                                        ]
+                                                    },
+                                                    "master": "custom",
+                                                    "options": [
+                                                        {
+                                                            "label": "Yes",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "label": "No",
+                                                            "value": "2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "formFields": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "F_02Row_layout",
+            "label": "Row",
+            "columns": "12",
+            "cols": [
+                {
+                    "id": "F_00Col_layout",
+                    "label": "Col",
+                    "columns": "12",
+                    "formFields": [
+                        {
+                            "id": "F_00Grid_formFields",
+                            "label": "Grid",
+                            "type": "Grid",
+                            "defaultValue": "",
+                            "validation": {
+                                "constraints": [
+                                    {
+                                        "name": "Control Type",
+                                        "config": "Grid"
+                                    },
+                                    {
+                                        "name": "Required",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "Readonly",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "Hidden",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "enable_add",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "enable_edit",
+                                        "config": false
+                                    },
+                                    {
+                                        "name": "enable_delete",
+                                        "config": false
+                                    }
+                                ]
+                            },
+                            "table": [
+                                {
+                                    "id": "F_00Column_formFields",
+                                    "label": "Column",
+                                    "type": "String",
+                                    "defaultValue": "",
+                                    "validation": {
+                                        "constraints": [
+                                            {
+                                                "name": "Control Type",
+                                                "config": "Text Field"
+                                            },
+                                            {
+                                                "name": "Required",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Readonly",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Hidden",
+                                                "config": false
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "F_01Column_formFields",
+                                    "label": "Column",
+                                    "type": "String",
+                                    "defaultValue": "",
+                                    "validation": {
+                                        "constraints": [
+                                            {
+                                                "name": "Control Type",
+                                                "config": "Text Field"
+                                            },
+                                            {
+                                                "name": "Required",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Readonly",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Hidden",
+                                                "config": false
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "id": "F_01Section_section",
+            "label": "Section",
+            "rows": [
+                {
+                    "id": "F_00Row_layout",
+                    "label": "Row",
+                    "columns": "1",
+                    "cols": [
+                        {
+                            "id": "F_00Col_layout",
+                            "label": "Col",
+                            "columns": "4",
+                            "formFields": [
+                                {
+                                    "id": "F_00Question_formFields",
+                                    "label": "Question",
+                                    "type": "String",
+                                    "defaultValue": "",
+                                    "validation": {
+                                        "constraints": [
+                                            {
+                                                "name": "Control Type",
+                                                "config": "Radio"
+                                            },
+                                            {
+                                                "name": "Required",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Readonly",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Hidden",
+                                                "config": false
+                                            }
+                                        ]
+                                    },
+                                    "master": "custom",
+                                    "options": [
+                                        {
+                                            "label": "Yes",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "F_01Col_layout",
+                            "label": "Col",
+                            "columns": "8",
+                            "formFields": [
+                                {
+                                    "id": "F_00Description_formFields",
+                                    "label": "Description",
+                                    "type": "String",
+                                    "defaultValue": "",
+                                    "validation": {
+                                        "constraints": [
+                                            {
+                                                "name": "Control Type",
+                                                "config": "Text Area"
+                                            },
+                                            {
+                                                "name": "Required",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Readonly",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Hidden",
+                                                "config": false
+                                            },
+                                            {
+                                                "name": "Rows",
+                                                "config": 2
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,469 @@
+:root {
+    /* --grey: #ddd; */
+    --grey: #e8e8e8;
+}
+
+html,
+body,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+body.backdrop:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.table-heading {
+    /* padding: 20px 0; */
+}
+
+.heading {
+    font-size: 26px;
+}
+
+/* drag drop form css */
+.configure-section-form {
+    display: none;
+}
+
+.section-configuration-body {
+    display: flex;
+    /* gap: 10px; */
+    width: 100%;
+}
+
+.builder-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.left-section {
+    width: 80%;
+    border: 1px dashed #ccc;
+    min-height: 400px;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.left-section input,
+.left-section select,
+.left-section span {
+    font-weight: normal;
+}
+
+.text-field-configuration-wrapper {
+    width: 20%;
+    padding: 0 10px;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    z-index: 5;
+    /* height: 80vh;
+    overflow-y: scroll;
+    border: 1px solid var(--grey); */
+}
+
+.text-field-configuration-wrapper .ui-draggable {
+    padding: 10px;
+}
+
+.form-field {
+    margin: 10px 0;
+    background-color: #f2f2f2;
+    /* border: 1px solid #ccc; */
+    cursor: move;
+}
+
+.draggable-elements,
+.draggable-section-elements,
+.draggable-column-elements,
+.draggable-layout-elements {
+    padding: 15px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.section-wrapper {
+    margin-bottom: 15px;
+}
+
+.section-wrapper .panel-heading {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 0;
+}
+
+.section-wrapper .panel-title {
+    padding: 12px 0 12px 15px;
+}
+
+.section-configuration-options {
+    padding: 9px 15px 9px 0;
+}
+
+.configuration-options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity: 0.3;
+    transition: 0.2s linear;
+}
+
+.field-wrapper {
+    margin-bottom: 15px;
+}
+
+.label-action-wrapper:hover .configuration-options,
+.table-heading:hover .configuration-options,
+.section-panel-heading:hover .configuration-options {
+    opacity: 1;
+}
+
+.radio-btn-group.inline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clickable-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-btn-group.inline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkbox-input-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.label-action-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.configuration-btn {
+    padding: 1px 5px;
+}
+
+/* .configure-field-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 62%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    background: #f7f7f7;
+    padding: 16px;
+    z-index: 2;
+    display: none;
+}
+
+.configure-field-form.show-form {
+    display: block;
+} */
+
+.basic-data-fields-section,
+.control-config-field-section,
+.file-config-field-section,
+.attribute-field-section {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid var(--grey);
+    margin-bottom: 16px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.dependent-field-wrapper {
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.control-config-field-section {
+    border: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.file-config-field-section {
+    margin-bottom: 0;
+}
+
+.attribute-field-section {
+    margin-bottom: 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+.configuration-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.configuration-form-header h2 {
+    font-size: 18px;
+}
+
+.configuration-form-header .btn {
+    padding: 3px 8px;
+    background: transparent;
+}
+
+.configuration-form-footer {
+    border-top: 1px solid var(--grey);
+    padding-top: 12px;
+    text-align: right;
+}
+
+.btn-wrapper-div {
+    position: relative;
+}
+
+.section-wrapper.dropped-field {
+    padding: 0;
+    border: 0;
+}
+
+.section-panel-body:before,
+.section-panel-body:after {
+    display: none;
+}
+
+.section-element-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.section-panel-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.ui-droppable-hover {
+    transition: 0.15s linear;
+    box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.5);
+}
+
+.draggable-elements.ui-draggable-dragging,
+.draggable-column-elements.ui-draggable-dragging {
+    min-width: 200px;
+}
+
+textarea.form-control {
+    width: 100% !important;
+}
+
+.option-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.option-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-btn {
+    padding: 2px 5px;
+    line-height: normal;
+}
+
+.hide-remove-btn .remove-option-btn {
+    display: none;
+}
+
+.submit-btn {
+    padding-top: 20px;
+}
+
+.dependent-field {
+    display: none;
+}
+
+.hide-label .field-label {
+    display: none;
+}
+
+.radio-button-group,
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkbox-wrapper {
+    padding-bottom: 10px;
+}
+
+.checkbox-wrapper .checkbox-label {
+    flex: 0 0 18%;
+}
+
+.radio-button-group input,
+.checkbox-button-group input {
+    margin: 0;
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.checkbox-label {
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+.radio-title,
+.checkbox-title {
+    margin-bottom: 0;
+}
+
+.grid-action-buttons {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-action-buttons .btn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-section th {
+    opacity: 0.4;
+}
+
+.left-section .builder-row-section {
+    border: 2px dashed var(--grey);
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.left-section .builder-col-section:not(.empty-col) {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px dashed var(--grey);
+}
+
+.dummy-layout-elem {
+    padding: 10px;
+    border: 2px dashed var(--grey);
+    min-height: 50px;
+}
+
+.configuration-options-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.configuration-options-wrapper p {
+    margin-bottom: 0;
+}
+
+.table-header-wrapper .table-heading {
+    position: relative;
+}
+
+.table-heading .heading-element {
+    margin: 0;
+}
+
+.table-header-wrapper .table-heading:hover .configuration-options {
+    display: flex;
+}
+
+.table-header-wrapper .configuration-options {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    display: none;
+}
+
+.document-action-btn {
+    padding: 0;
+    background-color: transparent;
+}
+
+.toggle-layout-borders-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Style to Clean page preview */
+.hide-layout-border.left-section {
+    padding: 10px 15px;
+}
+
+.hide-layout-border .builder-layout-field .label-action-wrapper:not(.form-field-label-wrapper) {
+    display: none;
+}
+
+.hide-layout-border .form-field-label-wrapper .configuration-options {
+    display: none;
+}
+
+.hide-layout-border .builder-row-section,
+.hide-layout-border .builder-col-section:not(.empty-col) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+}
+
+.hide-layout-border .builder-col-section:not(.empty-col) {
+    padding: 0;
+}
